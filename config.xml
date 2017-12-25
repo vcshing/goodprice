@@ -26,6 +26,9 @@
         <icon density="xhdpi" src="www/res/icon/android/xhdpi.png" />
         <icon density="xxhdpi" src="www/res/icon/android/xxhdpi.png" />
         <icon density="xxxhdpi" src="www/res/icon/android/xxxhdpi.png" />
+				<feature name="SocialSharing">
+			  <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
+			</feature>
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
