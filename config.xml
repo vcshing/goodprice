@@ -41,8 +41,8 @@
     </platform>
     <platform name="windows">
     </platform>
-	<preference name='phonegap-version' value='cli-6.5.0' />
-<preference name='pgb-builder-version' value='2' />
+<preference name='phonegap-version' value='cli-7.0.1' />
+<preference name='pgb-builder-version' value='1' />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="fullscreen" value="true" />
     <preference name="loadUrlTimeoutValue" value="700000" />
