@@ -1,52 +1,21 @@
 {
-  "prepare_queue": {
-    "installed": [],
-    "uninstalled": []
-  },
-  "config_munge": {
-    "files": {}
-  },
-  "installed_plugins": {
-    "com.verso.cordova.clipboard": {
-      "PACKAGE_NAME": "io.cordova.hellocordova"
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
     },
-    "cordova-plugin-console": {
-      "PACKAGE_NAME": "io.cordova.hellocordova"
+    "config_munge": {
+        "files": {}
     },
-    "cordova-plugin-dialogs": {
-      "PACKAGE_NAME": "io.cordova.hellocordova"
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.skyexplorer.goodprice"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.skyexplorer.goodprice"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.skyexplorer.goodprice"
+        }
     },
-    "cordova-plugin-inappbrowser": {
-      "PACKAGE_NAME": "io.cordova.hellocordova"
-    },
-    "cordova-plugin-network-information": {
-      "PACKAGE_NAME": "io.cordova.hellocordova"
-    },
-    "cordova-plugin-statusbar": {
-      "PACKAGE_NAME": "io.cordova.hellocordova"
-    },
-    "cordova-plugin-vibration": {
-      "PACKAGE_NAME": "io.cordova.hellocordova"
-    },
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "io.cordova.hellocordova"
-    },
-    "cordova-plugin-x-socialsharing": {
-      "PACKAGE_NAME": "io.cordova.hellocordova"
-    }
-  },
-  "dependent_plugins": {
-    "cordova-connectivity-monitor": {
-      "PACKAGE_NAME": "io.cordova.hellocordova"
-    },
-    "cordova-admob": {
-      "PACKAGE_NAME": "io.cordova.hellocordova"
-    },
-    "cordova-plugin-x-toast": {
-      "PACKAGE_NAME": "io.cordova.hellocordova"
-    },
-    "phonegap-plugin-barcodescanner": {
-      "PACKAGE_NAME": "io.cordova.hellocordova"
-    }
-  }
+    "dependent_plugins": {}
 }
