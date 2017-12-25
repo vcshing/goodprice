@@ -17,7 +17,7 @@
     <allow-intent href="geo:*" />
     <icon src="icon.png" />
     <platform name="android">
-        <preference name="android-minSdkVersion" value="15" />
+        <preference name="android-minSdkVersion" value="14" />
         <preference name="android-targetSdkVersion" value="23" />
         <allow-intent href="market:*" />
         <icon density="ldpi" src="www/res/icon/android/ldpi.png" />
@@ -59,4 +59,5 @@
     <plugin name="cordova-plugin-vibration" />
     <plugin name="cordova-plugin-x-socialsharing" />
     <plugin name="cordova-plugin-x-toast" />
+    <engine name="browser" spec="^5.0.2" />
 </widget>

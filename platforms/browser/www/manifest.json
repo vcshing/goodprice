@@ -1,0 +1,17 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Best Package",
+  "short_name": "Best Package",
+  "version": "com.skyexplorer.goodprice",
+  "description": "Best Package",
+  "author": "Sky Explorer",
+  "icons": [
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "undefinedxundefined"
+    }
+  ],
+  "start_url": "index.html"
+}
