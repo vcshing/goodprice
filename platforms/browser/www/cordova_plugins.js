@@ -1,52 +1,19 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
-        "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
-        "id": "cordova-plugin-statusbar.statusbar",
-        "pluginId": "cordova-plugin-statusbar",
+        "file": "plugins/admob/www/admob.js",
+        "id": "admob.admob",
+        "pluginId": "admob",
         "clobbers": [
-            "window.StatusBar"
+            "window.admob"
         ]
     },
     {
-        "file": "plugins/cordova-plugin-statusbar/src/browser/StatusBarProxy.js",
-        "id": "cordova-plugin-statusbar.StatusBarProxy",
-        "pluginId": "cordova-plugin-statusbar",
-        "runs": true
-    },
-    {
-        "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
-        "id": "cordova-plugin-inappbrowser.inappbrowser",
-        "pluginId": "cordova-plugin-inappbrowser",
+        "file": "plugins/com.verso.cordova.clipboard/www/clipboard.js",
+        "id": "com.verso.cordova.clipboard.Clipboard",
+        "pluginId": "com.verso.cordova.clipboard",
         "clobbers": [
-            "cordova.InAppBrowser.open",
-            "window.open"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-inappbrowser/src/browser/InAppBrowserProxy.js",
-        "id": "cordova-plugin-inappbrowser.InAppBrowserProxy",
-        "pluginId": "cordova-plugin-inappbrowser",
-        "merges": [
-            ""
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-vibration/www/vibration.js",
-        "id": "cordova-plugin-vibration.notification",
-        "pluginId": "cordova-plugin-vibration",
-        "merges": [
-            "navigator.notification",
-            "navigator"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-vibration/src/browser/Vibration.js",
-        "id": "cordova-plugin-vibration.Vibration",
-        "pluginId": "cordova-plugin-vibration",
-        "merges": [
-            "navigator.notification",
-            "navigator"
+            "cordova.plugins.clipboard"
         ]
     },
     {
@@ -66,25 +33,21 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/cordova-plugin-x-socialsharing/www/SocialSharing.js",
-        "id": "cordova-plugin-x-socialsharing.SocialSharing",
-        "pluginId": "cordova-plugin-x-socialsharing",
+        "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+        "id": "cordova-plugin-inappbrowser.inappbrowser",
+        "pluginId": "cordova-plugin-inappbrowser",
         "clobbers": [
-            "window.plugins.socialsharing"
+            "cordova.InAppBrowser.open",
+            "window.open"
         ]
     },
     {
-        "file": "plugins/cordova-plugin-x-toast/www/Toast.js",
-        "id": "cordova-plugin-x-toast.Toast",
-        "pluginId": "cordova-plugin-x-toast",
-        "clobbers": [
-            "window.plugins.toast"
+        "file": "plugins/cordova-plugin-inappbrowser/src/browser/InAppBrowserProxy.js",
+        "id": "cordova-plugin-inappbrowser.InAppBrowserProxy",
+        "pluginId": "cordova-plugin-inappbrowser",
+        "merges": [
+            ""
         ]
-    },
-    {
-        "file": "plugins/cordova-plugin-x-toast/test/tests.js",
-        "id": "cordova-plugin-x-toast.tests",
-        "pluginId": "cordova-plugin-x-toast"
     },
     {
         "file": "plugins/cordova-plugin-network-information/www/network.js",
@@ -110,27 +73,88 @@ module.exports = [
         "runs": true
     },
     {
-        "file": "plugins/admob/www/admob.js",
-        "id": "admob.admob",
-        "pluginId": "admob",
+        "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
+        "id": "cordova-plugin-statusbar.statusbar",
+        "pluginId": "cordova-plugin-statusbar",
         "clobbers": [
-            "window.admob"
+            "window.StatusBar"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-statusbar/src/browser/StatusBarProxy.js",
+        "id": "cordova-plugin-statusbar.StatusBarProxy",
+        "pluginId": "cordova-plugin-statusbar",
+        "runs": true
+    },
+    {
+        "file": "plugins/cordova-plugin-vibration/www/vibration.js",
+        "id": "cordova-plugin-vibration.notification",
+        "pluginId": "cordova-plugin-vibration",
+        "merges": [
+            "navigator.notification",
+            "navigator"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-vibration/src/browser/Vibration.js",
+        "id": "cordova-plugin-vibration.Vibration",
+        "pluginId": "cordova-plugin-vibration",
+        "merges": [
+            "navigator.notification",
+            "navigator"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-x-socialsharing/www/SocialSharing.js",
+        "id": "cordova-plugin-x-socialsharing.SocialSharing",
+        "pluginId": "cordova-plugin-x-socialsharing",
+        "clobbers": [
+            "window.plugins.socialsharing"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-x-toast/www/Toast.js",
+        "id": "cordova-plugin-x-toast.Toast",
+        "pluginId": "cordova-plugin-x-toast",
+        "clobbers": [
+            "window.plugins.toast"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-x-toast/test/tests.js",
+        "id": "cordova-plugin-x-toast.tests",
+        "pluginId": "cordova-plugin-x-toast"
+    },
+    {
+        "file": "plugins/phonegap-plugin-barcodescanner/www/barcodescanner.js",
+        "id": "phonegap-plugin-barcodescanner.BarcodeScanner",
+        "pluginId": "phonegap-plugin-barcodescanner",
+        "clobbers": [
+            "cordova.plugins.barcodeScanner"
+        ]
+    },
+    {
+        "file": "plugins/phonegap-plugin-barcodescanner/src/browser/BarcodeScannerProxy.js",
+        "id": "phonegap-plugin-barcodescanner.BarcodeScannerProxy",
+        "pluginId": "phonegap-plugin-barcodescanner",
+        "runs": true
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "cordova-plugin-whitelist": "1.3.3",
+    "admob": "5.5.0",
+    "com.verso.cordova.clipboard": "0.1.0",
     "cordova-plugin-console": "1.1.0",
-    "cordova-plugin-statusbar": "2.4.0",
-    "cordova-plugin-inappbrowser": "1.5.0",
-    "cordova-plugin-vibration": "2.1.2",
     "cordova-plugin-dialogs": "1.3.0",
+    "cordova-plugin-inappbrowser": "1.5.0",
+    "cordova-plugin-network-information": "1.3.2",
+    "cordova-plugin-statusbar": "2.4.0",
+    "cordova-plugin-vibration": "2.1.2",
+    "cordova-plugin-whitelist": "1.3.3",
     "cordova-plugin-x-socialsharing": "5.1.6",
     "cordova-plugin-x-toast": "2.5.2",
-    "cordova-plugin-network-information": "1.3.2",
-    "admob": "5.5.0"
+    "phonegap-plugin-barcodescanner": "6.0.5"
 }
 // BOTTOM OF METADATA
 });
