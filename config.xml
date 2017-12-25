@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.skyexplorer.moneycalc" version="0.0.8" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" android-versionCode="8">
-    <name>Payment Per Person</name>
+<widget id="com.skyexplorer.goodprice" version="0.0.8" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" android-versionCode="8">
+    <name>Best Package</name>
     <description>
-        Payment Per Person
+      Best Package
     </description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
        Sky Explorer
