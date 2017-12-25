@@ -20,7 +20,6 @@
   "homepage": "https://github.com/phonegap/phonegap-template-framework7",
   "cordova": {
     "plugins": {
-      "cordova-admob": {},
       "cordova-plugin-dialogs": {},
       "cordova-plugin-inappbrowser": {},
       "cordova-plugin-network-information": {},
