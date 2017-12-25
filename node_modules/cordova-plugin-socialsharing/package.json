@@ -1,0 +1,101 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "cordova-plugin-socialsharing",
+        "scope": null,
+        "escapedName": "cordova-plugin-socialsharing",
+        "name": "cordova-plugin-socialsharing",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "E:\\project\\api\\GitHub\\goodprice"
+    ]
+  ],
+  "_from": "cordova-plugin-socialsharing@latest",
+  "_id": "cordova-plugin-socialsharing@4.3.81",
+  "_inCache": true,
+  "_location": "/cordova-plugin-socialsharing",
+  "_nodeVersion": "0.12.7",
+  "_npmUser": {
+    "name": "appsystem",
+    "email": "appsystemstaff@gmail.com"
+  },
+  "_npmVersion": "2.11.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "cordova-plugin-socialsharing",
+    "scope": null,
+    "escapedName": "cordova-plugin-socialsharing",
+    "name": "cordova-plugin-socialsharing",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-socialsharing/-/cordova-plugin-socialsharing-4.3.81.tgz",
+  "_shasum": "8bcb08833b04561574c2cd01a8500e1e369f6238",
+  "_shrinkwrap": null,
+  "_spec": "cordova-plugin-socialsharing",
+  "_where": "E:\\project\\api\\GitHub\\goodprice",
+  "author": {
+    "name": "Eddy Verbruggen"
+  },
+  "bugs": {
+    "url": "https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin/issues"
+  },
+  "cordova": {
+    "id": "cordova-plugin-socialsharing",
+    "platforms": [
+      "android",
+      "ios",
+      "wp8"
+    ]
+  },
+  "dependencies": {},
+  "description": "Cordova Plugin SocialSharing",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "8bcb08833b04561574c2cd01a8500e1e369f6238",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-socialsharing/-/cordova-plugin-socialsharing-4.3.81.tgz"
+  },
+  "homepage": "https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin/blob/ac66d5d/README.md",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-wp8",
+    "cordova",
+    "phonegap",
+    "phonegap build",
+    "SocialSharing",
+    "EddyVerbruggen",
+    "Social Sharing",
+    "Twitter",
+    "Facebook",
+    "Email",
+    "SMS",
+    "WhatsApp"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "appsystem",
+      "email": "appsystemstaff@gmail.com"
+    }
+  ],
+  "name": "cordova-plugin-socialsharing",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git"
+  },
+  "scripts": {},
+  "version": "4.3.81"
+}

@@ -116,6 +116,14 @@ module.exports = [
         "clobbers": [
             "window.admob"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-socialsharing/www/SocialSharing.js",
+        "id": "cordova-plugin-socialsharing.SocialSharing",
+        "pluginId": "cordova-plugin-socialsharing",
+        "clobbers": [
+            "window.plugins.socialsharing"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -130,7 +138,8 @@ module.exports.metadata =
     "cordova-plugin-x-socialsharing": "5.1.6",
     "cordova-plugin-x-toast": "2.5.2",
     "cordova-plugin-network-information": "1.3.2",
-    "admob": "5.5.0"
+    "admob": "5.5.0",
+    "cordova-plugin-socialsharing": "4.3.81"
 }
 // BOTTOM OF METADATA
 });

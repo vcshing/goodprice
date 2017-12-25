@@ -35,6 +35,7 @@ var mainView = myApp.addView('.view-main', {
 //myApp.preprocess("","","")
 
 // Handle Cordova Device Ready Event
+
 $$(document).on('deviceready', function() {
     console.log("Device is ready!");
     window.open = cordova.InAppBrowser.open;
@@ -55,7 +56,11 @@ admob.initAdmob(appConfigArr["androidAdmobBannerID"],appConfigArr["androidAdmobI
         autoShowInterstitial: true // auto show interstitials ad when loaded	// Optional
     });
 */
-admob.showBanner(admob.BannerSize.BANNER,admob.Position.BOTTOM_CENTER);
+var admobParam=new  admob.Params();
+      //admobParam.extra={'keyword':"admob phonegame"};
+      //admobParam.isForChild=true;
+      admobParam.isTesting=true;
+admob.showBanner(admob.BannerSize.BANNER,admob.Position.BOTTOM_CENTER,admobParam);
     // Start showing banners (atomatic when autoShowBanner is set to true)
   //  window.plugins.AdMob.createBannerView();
   document.addEventListener(admob.Event.onInterstitialReceive, onInterstitialReceive, false);//show in ad receive event fun need add receive listener
