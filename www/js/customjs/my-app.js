@@ -39,8 +39,9 @@ $$(document).on('deviceready', function() {
     console.log("Device is ready!");
     window.open = cordova.InAppBrowser.open;
 
+admob.initAdmob(appConfigArr["androidAdmobBannerID"],appConfigArr["androidAdmobInterstitialID"])
     // Set AdMobAds options:
-    window.plugins.AdMob.setOptions({
+  /*  window.plugins.AdMob.setOptions({
         publisherId: appConfigArr["androidAdmobBannerID"], // Required
         interstitialAdId: appConfigArr["androidAdmobInterstitialID"], // Optional
         tappxIdAndroid: "", // Optional
@@ -53,13 +54,22 @@ $$(document).on('deviceready', function() {
         autoShowBanner: true, // auto show banners ad when loaded
         autoShowInterstitial: true // auto show interstitials ad when loaded	// Optional
     });
-
+*/
+admob.showBanner(admob.BannerSize.BANNER,admob.Position.BOTTOM_CENTER);
     // Start showing banners (atomatic when autoShowBanner is set to true)
-    window.plugins.AdMob.createBannerView();
-
+  //  window.plugins.AdMob.createBannerView();
+  document.addEventListener(admob.Event.onInterstitialReceive, onInterstitialReceive, false);//show in ad receive event fun need add receive listener
+   admob.cacheInterstitial();// load admob Interstitial
+   function onInterstitialReceive(message) {//show in ad receive event fun
+       admob.showInterstitial();
+   }
     // Request interstitial (will present automatically when autoShowInterstitial is set to true)
     randomEvent(10, function() {
-      window.plugins.AdMob.createInterstitialView();
+      admob.isInterstitialReady(function(isReady){
+         if(isReady){
+             admob.showInterstitial();
+         }
+     });
     });
 
     //navigator.vibrate([1000, 1000, 3000, 1000, 5000]);
