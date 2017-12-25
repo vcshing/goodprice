@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="5" id="com.skyexplorer.moneycalc" version="0.0.5" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget android-versionCode="8" id="com.skyexplorer.goodprice" version="0.0.8" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <feature name="BarcodeScanner">
         <param name="browser-package" value="BarcodeScanner" />
     </feature>
-    <name>Payment Per Person</name>
+    <name>Best Package</name>
     <description>
-        Payment Per Person
+      Best Package
     </description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
        Sky Explorer
