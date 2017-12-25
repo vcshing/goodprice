@@ -45,6 +45,7 @@
     <preference name="DisallowOverscroll" value="true" />
     <preference name="fullscreen" value="true" />
     <preference name="loadUrlTimeoutValue" value="700000" />
+	<preference name="android-build-tool" value="ant" />
     <preference name="permissions" value="none" />
     <feature name="Toast">
         <param name="android-package" value="nl.xservices.plugins.Toast" />
