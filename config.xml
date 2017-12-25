@@ -25,39 +25,27 @@
         <icon density="xhdpi" src="www/res/icon/android/xhdpi.png" />
         <icon density="xxhdpi" src="www/res/icon/android/xxhdpi.png" />
         <icon density="xxxhdpi" src="www/res/icon/android/xxxhdpi.png" />
-        <feature name="SocialSharing">
-            <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
-        </feature>
+
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
         <preference name="BackupWebStorage" value="none" />
-        <feature name="SocialSharing">
-            <param name="ios-package" value="SocialSharing" />
-        </feature>
     </platform>
     <platform name="wp8">
     </platform>
     <platform name="windows">
     </platform>
-<preference name='phonegap-version' value='cli-7.0.1' />
-<preference name='pgb-builder-version' value='1' />
+
     <preference name="DisallowOverscroll" value="true" />
     <preference name="fullscreen" value="true" />
     <preference name="loadUrlTimeoutValue" value="700000" />
     <preference name="permissions" value="none" />
-    <feature name="Toast">
-        <param name="android-package" value="nl.xservices.plugins.Toast" />
-    </feature>
+	
+
     <plugin name="cordova-admob" />
+    <preference name="DisallowOverscroll" value="true" />
+    <plugin name="cordova-plugin-whitelist" spec="~1.2.0" />
     <plugin name="cordova-plugin-console" spec="~1.0.1" />
-    <plugin name="cordova-plugin-dialogs" />
-    <plugin name="cordova-plugin-inappbrowser" />
-    <plugin name="cordova-plugin-network-information" />
     <plugin name="cordova-plugin-statusbar" spec="~1.0.1" />
-    <plugin name="cordova-plugin-vibration" />
-    <plugin name="cordova-plugin-x-socialsharing" />
-    <plugin name="cordova-plugin-x-toast" />
-    <engine name="browser" spec="^5.0.2" />
 </widget>
