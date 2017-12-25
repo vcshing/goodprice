@@ -71,14 +71,6 @@
     "is_top_level": true,
     "variables": {}
   },
-  "cordova-plugin-admob-free": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-admob-free"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
   "cordova-promise-polyfill": {
     "source": {
       "type": "registry",
@@ -93,6 +85,14 @@
       "id": "cordova-admob-sdk@~0.13.1"
     },
     "is_top_level": false,
+    "variables": {}
+  },
+  "admob": {
+    "source": {
+      "type": "registry",
+      "id": "admob"
+    },
+    "is_top_level": true,
     "variables": {}
   }
 }
