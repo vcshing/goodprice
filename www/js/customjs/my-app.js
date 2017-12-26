@@ -74,7 +74,7 @@ $$(document).on('deviceready', function() {
         isTesting: true,
         autoShow: true
     });
-    if (AdMob) AdMob.showInterstitial();
+
     // Request interstitial (will present automatically when autoShowInterstitial is set to true)
     randomEvent(10, function() {
         if (AdMob) AdMob.showInterstitial();
