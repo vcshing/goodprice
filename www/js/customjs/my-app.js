@@ -64,14 +64,12 @@ $$(document).on('deviceready', function() {
     if (AdMob) AdMob.createBanner({
         adId: admobid.banner,
         position: AdMob.AD_POSITION.BOTTOM_CENTER,
-        isTesting: true,
         autoShow: true
     });
 
 
     if (AdMob) AdMob.prepareInterstitial({
         adId: admobid.interstitial,
-        isTesting: true,
         autoShow: true
     });
 
