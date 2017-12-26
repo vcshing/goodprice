@@ -59,23 +59,27 @@ $$(document).on('deviceready', function() {
             interstitial: appConfigArr["androidAdmobInterstitialID"]
         };
     }
-
+alert(admobid.banner);
+alert(AdMob);
     if (AdMob) AdMob.createBanner({
         adId: admobid.banner,
         position: AdMob.AD_POSITION.BOTTOM_CENTER,
+        isTesting: true,
         autoShow: true
     });
 
 
     if (AdMob) AdMob.prepareInterstitial({
         adId: admobid.interstitial,
+        isTesting: true,
         autoShow: false
     });
+    if (AdMob) AdMob.showInterstitial();
     // Request interstitial (will present automatically when autoShowInterstitial is set to true)
     randomEvent(10, function() {
         if (AdMob) AdMob.showInterstitial();
     });
-  
+
     //navigator.vibrate([1000, 1000, 3000, 1000, 5000]);
 });
 
