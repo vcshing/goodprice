@@ -68,14 +68,12 @@ $$(document).on('deviceready', function() {
     });
 
 
-    if (AdMob) AdMob.prepareInterstitial({
-        adId: admobid.interstitial,
-        autoShow: true
-    });
-
     // Request interstitial (will present automatically when autoShowInterstitial is set to true)
     randomEvent(10, function() {
-        if (AdMob) AdMob.showInterstitial();
+      if (AdMob) AdMob.prepareInterstitial({
+          adId: admobid.interstitial,
+          autoShow: true
+      });
     });
 
     //navigator.vibrate([1000, 1000, 3000, 1000, 5000]);
