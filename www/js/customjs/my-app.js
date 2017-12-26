@@ -38,10 +38,10 @@ var mainView = myApp.addView('.view-main', {
 
 $$(document).on('deviceready', function() {
     console.log("Device is ready!");
-    alert(1);
+
     window.open = cordova.InAppBrowser.open;
-  alert(2);
-  
+
+
     // Set AdMobAds options:
     var admobid = {};
     if (/(android)/i.test(navigator.userAgent)) { // for android & amazon-fireos
@@ -60,8 +60,7 @@ $$(document).on('deviceready', function() {
             interstitial: appConfigArr["androidAdmobInterstitialID"]
         };
     }
-alert(admobid.banner);
-alert(AdMob);
+
     if (AdMob) AdMob.createBanner({
         adId: admobid.banner,
         position: AdMob.AD_POSITION.BOTTOM_CENTER,
@@ -73,7 +72,7 @@ alert(AdMob);
     if (AdMob) AdMob.prepareInterstitial({
         adId: admobid.interstitial,
         isTesting: true,
-        autoShow: false
+        autoShow: true
     });
     if (AdMob) AdMob.showInterstitial();
     // Request interstitial (will present automatically when autoShowInterstitial is set to true)
