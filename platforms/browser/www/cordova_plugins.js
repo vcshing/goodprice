@@ -1,14 +1,6 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
-        "file": "plugins/admob/www/admob.js",
-        "id": "admob.admob",
-        "pluginId": "admob",
-        "clobbers": [
-            "window.admob"
-        ]
-    },
-    {
         "file": "plugins/com.verso.cordova.clipboard/www/clipboard.js",
         "id": "com.verso.cordova.clipboard.Clipboard",
         "pluginId": "com.verso.cordova.clipboard",
@@ -138,12 +130,19 @@ module.exports = [
         "id": "phonegap-plugin-barcodescanner.BarcodeScannerProxy",
         "pluginId": "phonegap-plugin-barcodescanner",
         "runs": true
+    },
+    {
+        "file": "plugins/cordova-plugin-admobpro/www/AdMob.js",
+        "id": "cordova-plugin-admobpro.AdMob",
+        "pluginId": "cordova-plugin-admobpro",
+        "clobbers": [
+            "window.AdMob"
+        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "admob": "5.5.0",
     "com.verso.cordova.clipboard": "0.1.0",
     "cordova-plugin-console": "1.1.0",
     "cordova-plugin-dialogs": "1.3.0",
@@ -154,7 +153,9 @@ module.exports.metadata =
     "cordova-plugin-whitelist": "1.3.3",
     "cordova-plugin-x-socialsharing": "5.1.6",
     "cordova-plugin-x-toast": "2.5.2",
-    "phonegap-plugin-barcodescanner": "6.0.5"
+    "phonegap-plugin-barcodescanner": "6.0.5",
+    "cordova-plugin-extension": "1.5.3",
+    "cordova-plugin-admobpro": "2.29.29"
 }
 // BOTTOM OF METADATA
 });

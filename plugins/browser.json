@@ -7,9 +7,6 @@
     "files": {}
   },
   "installed_plugins": {
-    "admob": {
-      "PACKAGE_NAME": "io.cordova.hellocordova"
-    },
     "cordova-plugin-console": {
       "PACKAGE_NAME": "io.cordova.hellocordova"
     },
@@ -36,6 +33,9 @@
     },
     "cordova-plugin-x-toast": {
       "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-admobpro": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
     }
   },
   "dependent_plugins": {
@@ -43,6 +43,9 @@
       "PACKAGE_NAME": "io.cordova.hellocordova"
     },
     "phonegap-plugin-barcodescanner": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-extension": {
       "PACKAGE_NAME": "io.cordova.hellocordova"
     }
   }

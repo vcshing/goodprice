@@ -7,7 +7,7 @@ var loopLangArr = []
 
 appConfigArr={
   "appName" :	"Best Choice",
-  "appDescrption"	:	"Best Choice",
+  "appDescription"	:	"Best Choice",
   "androidAppLink"	:"https://play.google.com/store/apps/details?id=com.skyexplorer.goodprice",
   "androidAdmobBannerID"	:"ca-app-pub-3715336230214756/1437729084",
   "androidAdmobInterstitialID"	:"ca-app-pub-3715336230214756/8549932345"
