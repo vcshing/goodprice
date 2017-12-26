@@ -36,7 +36,7 @@ var mainView = myApp.addView('.view-main', {
 
 // Handle Cordova Device Ready Event
 
-$$(document).on('deviceready', function() {
+$$( document ).ready(function() {
     console.log("Device is ready!");
     alert(1);
     window.open = cordova.InAppBrowser.open;
