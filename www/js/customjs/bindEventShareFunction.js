@@ -16,8 +16,26 @@ $(".aProductDollar").bind("change", function() {
     compareAB()
 })
 
+$(".aProductAmount").bind("click", function() {
+    if ($(this).val() == "1") {
+        aProductAmount = ""
+        $(".aProductAmount").val("")
+    }
+})
+
+$(".aProductAmount").bind("focusout", function() {
+    if ($(this).val() == "") {
+        aProductAmount = "1"
+        $(".aProductAmount").val("1")
+    }
+})
+
+
 $(".aProductAmount").bind("change", function() {
+
+
     aProductAmount = $(this).val()
+
     aCalcAmount()
     compareAB()
 })
@@ -34,8 +52,24 @@ $(".bProductDollar").bind("change", function() {
     compareAB()
 })
 
+$(".bProductAmount").bind("click", function() {
+    if ($(this).val() == "1") {
+        bProductAmount = ""
+        $(".bProductAmount").val("")
+    }
+})
+
+$(".aProductAmount").bind("focusout", function() {
+    if ($(this).val() == "") {
+        bProductAmount = "1"
+        $(".bProductAmount").val("1")
+    }
+})
+
 $(".bProductAmount").bind("change", function() {
+
     bProductAmount = $(this).val()
+
     bCalcAmount()
     compareAB()
 })
@@ -48,40 +82,40 @@ $(".bProductWeight").bind("change", function() {
 
 function aCalcAmount() {
     if (aProductDollar != "" && aProductAmount != "" && aProductWeight != "") {
-      aProductDollar2Unit=(aProductWeight * aProductAmount) / aProductDollar
-      aProductUnit2Dollar=aProductDollar / (aProductWeight * aProductAmount)
+        aProductDollar2Unit = (aProductWeight * aProductAmount) / aProductDollar
+        aProductUnit2Dollar = aProductDollar / (aProductWeight * aProductAmount)
         $(".aProductDollar2Unit").html(aProductDollar2Unit)
         $(".aProductUnit2Dollar").html(aProductUnit2Dollar)
-    }else{
-      aProductDollar2Unit=""
-      aProductUnit2Dollar=""
-      $(".aProductDollar2Unit").html(aProductDollar2Unit)
-      $(".aProductUnit2Dollar").html(aProductUnit2Dollar)
+    } else {
+        aProductDollar2Unit = ""
+        aProductUnit2Dollar = ""
+        $(".aProductDollar2Unit").html(aProductDollar2Unit)
+        $(".aProductUnit2Dollar").html(aProductUnit2Dollar)
     }
 }
 
 function bCalcAmount() {
     if (bProductDollar != "" && bProductAmount != "" && bProductWeight != "") {
-      bProductDollar2Unit=(bProductWeight * bProductAmount) / bProductDollar
-      bProductUnit2Dollar=bProductDollar / (bProductWeight * bProductAmount)
+        bProductDollar2Unit = (bProductWeight * bProductAmount) / bProductDollar
+        bProductUnit2Dollar = bProductDollar / (bProductWeight * bProductAmount)
         $(".bProductDollar2Unit").html(bProductDollar2Unit)
         $(".bProductUnit2Dollar").html(bProductUnit2Dollar)
-    }else{
-      bProductDollar2Unit=""
-      bProductUnit2Dollar=""
-      $(".bProductDollar2Unit").html(bProductDollar2Unit)
-      $(".bProductUnit2Dollar").html(bProductUnit2Dollar)
+    } else {
+        bProductDollar2Unit = ""
+        bProductUnit2Dollar = ""
+        $(".bProductDollar2Unit").html(bProductDollar2Unit)
+        $(".bProductUnit2Dollar").html(bProductUnit2Dollar)
     }
 }
 
-function compareAB(){
-  if(aProductDollar2Unit !="" && bProductDollar2Unit !=""){
-    if(aProductDollar2Unit > bProductDollar2Unit){
-      $(".cheapProduct").html($(".aProductName").html());
-    }else{
-      $(".cheapProduct").html($(".bProductName").html());
+function compareAB() {
+    if (aProductDollar2Unit != "" && bProductDollar2Unit != "") {
+        if (aProductDollar2Unit > bProductDollar2Unit) {
+            $(".cheapProduct").html($(".aProductName").html());
+        } else {
+            $(".cheapProduct").html($(".bProductName").html());
+        }
+    } else {
+        $(".cheapProduct").html("");
     }
-  }else{
-    $(".cheapProduct").html("");
-  }
 }

@@ -31,8 +31,8 @@ defaultLangArr.push("數量");
 defaultLangArr.push("每件重量");
 defaultLangArr.push("每件重量");
 defaultLangArr.push("每件重量");
-defaultLangArr.push("分析");
-defaultLangArr.push("最平");
+defaultLangArr.push("建議");
+defaultLangArr.push("最便宜");
 
 defaultLangArr.push("產品A");
 defaultLangArr.push("每一元");

@@ -16,7 +16,6 @@ $(".langen").bind("click", function() {
         "selectedLang": lang
     });
     pageInit();
-if (AdMob) AdMob.showBanner(AdMob.AD_POSITION.BOTTOM_CENTER);
 })
 
 $(".langtc").bind("click", function() {
