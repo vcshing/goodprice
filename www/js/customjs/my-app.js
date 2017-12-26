@@ -36,12 +36,12 @@ var mainView = myApp.addView('.view-main', {
 
 // Handle Cordova Device Ready Event
 
-$$( document ).ready(function() {
+$$(document).on('deviceready', function() {
     console.log("Device is ready!");
     alert(1);
     window.open = cordova.InAppBrowser.open;
   alert(2);
-
+  
     // Set AdMobAds options:
     var admobid = {};
     if (/(android)/i.test(navigator.userAgent)) { // for android & amazon-fireos
